@@ -15,9 +15,9 @@ name: Automate python drug table
             uses: actions/setup-python@v2
             with:
               python-version: 3.8 #install the python needed
-          - name: execute py script # run the run.py to get the latest data
+          - name: execute py script # run the chemblTable.py to get the latest data
             run: |
-              python run.py
+              python chemblTable.py
             env:
               key: ${{ secrets.key }} # if run.py requires passwords..etc, set it as secrets
           - name: export index
