@@ -1,8 +1,8 @@
-name: Automate python drug table
+name: Automate python drug table once a month
     
     on:
       schedule:
-        - cron: "* * 1 * *"
+        - cron: "* * 1 * *" #Once a month
     
     jobs:
       build:
@@ -18,7 +18,3 @@ name: Automate python drug table
           - name: execute py script # run the chemblTable.py to get the latest data
             run: |
               python chemblTable.py
-            env:
-              key: ${{ secrets.key }} # if run.py requires passwords..etc, set it as secrets
-          - name: export index
-            .... # use crosponding script or actions to help export.
