@@ -2,7 +2,7 @@ name: Automate python drug table once a month
 
 on:
   schedule:
-    - cron: "*/5 * * * *" #Once a month
+    - cron: "0 0 * * *" #Once a month
 
 jobs:
   build:
