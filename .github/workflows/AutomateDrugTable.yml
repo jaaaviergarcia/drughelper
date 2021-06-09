@@ -17,7 +17,9 @@ jobs:
           python-version: 3.8 #install the python needed
       - name: Install dependencies
         run: |
-          pip freeze > requirements.txt        
+          pip freeze > requirements.txt
+          pip install wheel
+          pip install pandas
       - name: execute py script # run the chemblTable.py to get the latest data
         run: |
           python chemblTable.py
