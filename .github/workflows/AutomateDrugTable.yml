@@ -5,7 +5,7 @@ on:
     - cron: "0 0 1 * *" #Once a month
 
 jobs:
-  first_job:
+  firstjob:
     runs-on: ubuntu-latest
 
     steps:
