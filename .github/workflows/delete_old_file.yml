@@ -1,0 +1,13 @@
+name: Delete old file
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Remove File
+        uses: JesseTG/rm@v1.0.2
+        with:
+          path: https://github.com/jaaaviergarcia/drughelper/blob/main/datosChembl.tsv
