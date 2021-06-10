@@ -28,3 +28,5 @@ jobs:
         uses: actions-js/push@master
         with:
          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
