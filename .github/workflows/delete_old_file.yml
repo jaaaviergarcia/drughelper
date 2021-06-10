@@ -1,6 +1,6 @@
 name: Delete old file
-on:
-  push:
+#on:
+ # push:
 
 jobs:
   build:
