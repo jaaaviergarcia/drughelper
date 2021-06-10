@@ -20,7 +20,6 @@ jobs:
           pip freeze > requirements.txt
           pip install wheel
           pip install pandas
-          pip install -r chembl_webresource_client.new_client
       - name: execute py script # run the chemblTable.py to get the latest data
         run: |
           python chemblTable.py
