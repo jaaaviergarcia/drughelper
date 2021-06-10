@@ -21,19 +21,24 @@ jobs:
           pip install wheel
           pip install pandas
           pip install chembl_webresource_client
-      - name: execute py script # run the chemblTable.py to get the latest data
-        run: |
-          python chemblTable.py
-      - name: Commit files
-        run: |
-          git config --local user.email "a905125@alumni.unav.es"
-          git config --local user.name "Javier Garcia"
-          git add --all
-          git commit -m "Add changes" -a
-        
-        shell: bash
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+   #   - name: execute py script # run the chemblTable.py to get the latest data
+    #    run: |
+     #     python chemblTable.py
+      #- name: Commit files
+       # run: |
+        #  git config --local user.email "a905125@alumni.unav.es"
+         # git config --local user.name "Javier Garcia"
+          #git add --all
+#          git commit -m "Add changes" -a
+ #       
+  #      shell: bash
+   #   - name: Push changes
+    #    uses: ad-m/github-push-action@master
+     #   with:
+      #
+      #github_token: ${{ secrets.TOKEN_LAST }}
+       #  branch: ${{ github.ref }}
+      - name: Commit & Push changes
+        uses: actions-js/push@master
         with:
-         github_token: ${{ secrets.TOKEN_LAST }}
-         branch: ${{ github.ref }}
+         github_token: ${{ secrets.GITHUB_TOKEN }}
