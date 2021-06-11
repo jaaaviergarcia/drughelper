@@ -24,10 +24,7 @@ jobs:
       - name: execute py script # run the chemblTable.py to get the latest data
         run: |
           python chemblTable.py
-      - name: Commit & Push changes
-        uses: actions-js/push@master
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-         branch: main
-         github_token: ${{ secrets.GITHUB_TOKEN }}
-
+         commit_message: Written file
         
