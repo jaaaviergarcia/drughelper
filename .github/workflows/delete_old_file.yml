@@ -1,8 +1,5 @@
 name: Delete old file
-on:
- # push:
- schedule:
- - cron: "0 0 1 * *" #Once a month
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
