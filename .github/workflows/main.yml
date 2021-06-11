@@ -10,5 +10,5 @@ jobs:
     steps:
      - name: Generate Rdata
        run: |
-          source("R/AuxFunction.R")
+          source("./tsv2rdata.R")
        shell: Rscript {0}
