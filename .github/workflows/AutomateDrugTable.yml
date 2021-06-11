@@ -33,5 +33,12 @@ jobs:
         with: 
          branch: master
          base: main
-         delete-branch: true
+      - name: Merge branches
+        uses: devmasx/merge-branch@v1.3.1
+        with:
+          type: now
+          from_branch: master
+          target_branch: main
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
         
