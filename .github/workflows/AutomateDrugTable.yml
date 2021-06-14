@@ -23,14 +23,16 @@ jobs:
       - name: execute py script # run the chemblTable.py to get the latest data
         run: |
           python chemblTable.py
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Commit & Push
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
          commit_message: Written py file
       - name: setup R
-      - uses: r-lib/actions/setup-r@v1
+        uses: r-lib/actions/setup-r@v1
       - name: execute R script # run the tsv2rdata.py to get the rdata file
         run: |
           R tsv2rdata.R
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Commit & Push
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
          commit_message: Written R file
