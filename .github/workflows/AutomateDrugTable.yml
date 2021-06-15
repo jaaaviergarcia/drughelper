@@ -1,8 +1,8 @@
 name: Automate python drug table once a month
 
-on: push
- # schedule:
-  #  - cron: "0 0 1 * *" #Once a month
+on: #push
+  schedule:
+    - cron: "0 0 1 * *" #Once a month
 
 jobs:
   first_job:
