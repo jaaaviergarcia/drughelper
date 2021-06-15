@@ -18,7 +18,7 @@ jobs:
           R -e 'renv::restore()'
       - name: execute R script # run the tsv2rdata.py to get the rdata file
         run: |
-          R -e 'renv::run("https://github.com/jaaaviergarcia/drughelper/blob/main/tsv2rdata.R")'
+          R -e 'renv::run("https://github.com/jaaaviergarcia/drughelper/tsv2rdata.R")'
       - name: Commit & Push
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
