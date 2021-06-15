@@ -5,7 +5,7 @@ on: push
 
 jobs:
   first_job:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latesthttps://github.com/jaaaviergarcia/drughelper/tree/main/.github/workflows
 
     steps:
       - name: checkout repo content
@@ -18,7 +18,7 @@ jobs:
           R -e 'renv::restore()'
       - name: execute R script # run the tsv2rdata.py to get the rdata file
         run: |
-          R -e 'renv::run("https://raw.githubusercontent.com\jaaaviergarcia\drughelper\main\tsv2rdata.R")'
+          R -e 'renv::run("https://raw.githubusercontent.com/jaaaviergarcia/drughelper/main/tsv2rdata.R")'
       - name: Commit & Push
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
