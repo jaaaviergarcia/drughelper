@@ -64,7 +64,7 @@ if (nrows_new - nrows_old > 0):
     newdrugs = nrows_new - nrows_old
     file.write("{}".format(year) + "{}".format(month) + "{}".format(day) + " : " + "{}".format(newdrugs) + " new drugs" + os.linesep)
     file.close()
-    data.to_csv('dhdrugs.tsv', sep = '\t', index=False)
+    #data.to_csv('dhdrugs.tsv', sep = '\t', index=False)
     
 elif (nrows_new == nrows_old):
     
