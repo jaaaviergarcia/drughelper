@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 from datetime import datetime
-
+'''
 
 from chembl_webresource_client.new_client import new_client
 molecule = new_client.molecule
@@ -46,7 +46,7 @@ for i in range(len(data['synonyms'])):
     
     data['synonyms'][i] = ";;;".join(d)
     d = []
-    
+    '''
 
 nrows_old = 9021
 nrows_new = 9020
