@@ -57,7 +57,7 @@ month = date.month
 day = date.day
 
 
-file = open("https://github.com/jaaaviergarcia/drughelper/edit/main/log.txt", "a")
+file = open("https://github.com/jaaaviergarcia/drughelper/blob/67772c42ba050bb8d2dd38772d820ad284ee7a06/log.txt", "a")
 
 if (nrows_new - nrows_old > 0): 
     
