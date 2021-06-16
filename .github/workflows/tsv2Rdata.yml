@@ -5,7 +5,7 @@ on: push
 
 jobs:
   first_job:
-    runs-on: ubuntu-latesthttps://github.com/jaaaviergarcia/drughelper/tree/main/.github/workflows
+    runs-on: ubuntu-latest
 
     steps:
       - name: checkout repo content
