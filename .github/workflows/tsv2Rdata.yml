@@ -1,4 +1,4 @@
-
+name: R file
 on: push
  # schedule:
   #  - cron: "0 0 1 * *" #Once a month
