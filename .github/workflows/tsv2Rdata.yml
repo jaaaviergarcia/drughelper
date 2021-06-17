@@ -16,6 +16,7 @@ jobs:
         run: |
           R -e 'install.packages("renv")'
           R -e 'renv::restore()'
+          R -e 'install.packages("readr")'
       - name: execute R script # run the tsv2rdata.R to get the rdata file
         run: |
           Rscript tsv2rdata.R
