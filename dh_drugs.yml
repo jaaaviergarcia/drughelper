@@ -1,0 +1,22 @@
+..generic:
+  git2rdata: 0.3.1
+  optimize: yes
+  NA string: NA
+  hash: 029380742ef2f2226a62f727bb0e3d8c4eaeb9e3
+  data_hash: fac984a1f209b77d908b4de28c34f180a3923eee
+DrugHelper:
+  class: character
+Drug:
+  class: character
+Chemblid:
+  class: character
+formula:
+  class: character
+max_phase:
+  class: numeric
+synonyms:
+  class: character
+synonyms_formatted:
+  class: character
+canonical:
+  class: character
