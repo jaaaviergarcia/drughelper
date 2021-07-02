@@ -2,8 +2,6 @@ import pandas as pd
 import os
 from datetime import datetime
 
-df = pd.read_csv("C:/Users/javie/OneDrive/Escritorio/Extras_TFG/singleDrugSynonymsChembl.csv",  sep = ',')
-
 from chembl_webresource_client.new_client import new_client
 molecule = new_client.molecule
 
